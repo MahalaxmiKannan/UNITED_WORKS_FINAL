@@ -3,7 +3,9 @@ import { JOB_POSITIONS, BENEFITS_DATA, EMPLOYEE_TESTIMONIALS, COMPANY_STATS } fr
 import type { JobPosition, EmployeeTestimonial } from '../types';
 import { ArrowRightIcon, PlusIcon, XMarkIcon } from '../components/Icons';
 import AnimatedSection from '../components/AnimatedSection';
-import AboutMain from '../assets/images/AboutMain.jpg'
+// Use a public/static URL instead of importing the PNG so TypeScript doesn't need a module declaration.
+// Place the image at public/assets/images/career-hero.png (or adjust the path to an existing public asset).
+const AboutMain = '/assets/images/Gemini_Generated_Image_8mxn148mxn148mxn.png';
 
 const HeroSection = () => (
     <div className="relative h-[50vh] sm:h-[55vh] md:h-[60vh] bg-cover bg-center" style={{ backgroundImage: `url(${AboutMain})` }}>

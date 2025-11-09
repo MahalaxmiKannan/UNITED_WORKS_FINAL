@@ -79,27 +79,27 @@ export const SUCCESS_TIMELINE: TimelineEvent[] = [
 
 export const SERVICES_DATA: Service[] = [
     {
-        title: 'Civil & Structural Engineering',
-        description: "We specialize in road trenching and excavation, including reinstatement works such as milling and patching. Our services also cover kerb installation, drainage improvements, turfing, replanting of landscaped areas, and minor civil construction works - all delivered with a focus on quality, safety, and compliance.",
-        imageUrl: "https://picsum.photos/seed/civil1/600/400",
+        title: 'Civil Engineering Works',
+        description: "Our civil engineering team specializes in pipe installation and comprehensive reinstatement works, including LTARoad reinstatement and temporary works. We deliver reliable and efficient solutions designed to ensure long-lasting infrastructure performance while minimizing disruption to the surrounding environment.",
+        imageUrl: "./assets/images/15 Nov 21 N105 Thomson Rd TH2.jpg",
         layout: "right"
     },
     {
-        title: 'In-Building Works',
-        description: "Our N-Building works include professional trunking and cable tray installations to support structured cabling systems, along with reliable fire-stop installations to ensure compliance with fire safety standards and maintain building integrity.",
-        imageUrl: "https://picsum.photos/seed/inbuilding1/600/400",
+        title: 'Potable Watermains & Pipeline Works',
+        description: "We handle a wide range of potable watermain and pipeline projects, including diversion, repairs, and upgrading works. Our experienced professionals also undertake PUB water pipe renewal works, ensuring safe, sustainable, and compliant water distribution systems that meet the highest industry standards.",
+        imageUrl: "./assets/images/2021 Kampong Java Re-bar to Concrete Pipe Laying.jpg",
         layout: "left"
     },
     {
-        title: 'Laying And Repair Of Power Cables',
-        description: "We specialize in the laying and repair of power cables across all voltage levels, including Extra High Tension (400kV, 230kV, 66kV), High Tension (22kV, 6.6kV), and Low Tension systems. Our services ensure safe, efficient, and reliable power distribution with strict adherence to industry and safety standards.",
-        imageUrl: "https://picsum.photos/seed/powercables/600/400",
+        title: 'In-door & Out-door Cable Installation Works',
+        description: "We provide complete network infrastructure solutions, from planning to implementation. Our services include the laying and shifting of EHV, HT, LT, fibre, and copper cables, along with professional termination, patching, jointing, and splicing—ensuring seamless connectivity and optimal network performance.",
+        imageUrl: "./assets/images/Cable Lay 3.jpg",
         layout: "right"
     },
     {
-        title: 'Laying, Splicing, Termination, Repairing, And Re-routing of Telecommunication cables.',
-        description: "We provide expert pipe installation services for power cables, telecommunication cables, and water pipes, ensuring safe routing, proper segregation, and compliance with industry standards for performance and durability.",
-        imageUrl: "https://picsum.photos/seed/telecom/600/400",
+        title: 'EV Charging Works',
+        description: "Supporting the transition to sustainable mobility, we offer comprehensive EV charger installation services. From site preparation to commissioning, our team ensures every installation meets safety standards and delivers reliable charging solutions for both residential and commercial needs.",
+        imageUrl: "./assets/images/WhatsApp Image 2025-09-06 at 14.14.36_5c8c50f7.jpg",
         layout: "left"
     }
 ];
