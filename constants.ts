@@ -111,7 +111,14 @@ export const PROJECTS_DATA: Project[] = Array.from({ length: 24 }, (_, i) => ({
     imageUrl: `https://picsum.photos/seed/project${i+1}/400/300`
 }));
 
-export const MILESTONES_TIMELINE: string[] = ['2007', '2008', '2009', '2010', '2011', '2012'];
+export const MILESTONES_TIMELINE: { year: string; imageUrl: string }[] = [
+    { year: '2007', imageUrl: './assets/images/15 Nov 21 N105 Novena TH.jpg' },
+    { year: '2008', imageUrl: './assets/images/2021 Kampong Java Pipe Laying.jpg' },
+    { year: '2009', imageUrl: './assets/images/IMG-20230522-WA0077.jpg' },
+    { year: '2010', imageUrl: './assets/images/Fibre work 6.jpeg' },
+    { year: '2011', imageUrl: './assets/images/IMG_1103.jpg' },
+    { year: '2012', imageUrl: './assets/images/WhatsApp Image 2025-09-06 at 14.14.36_5c8c50f7.jpg' },
+];
 
 export const TESTIMONIALS_DATA: Testimonial[] = [
     {
