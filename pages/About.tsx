@@ -47,6 +47,8 @@ const TimelineSection = () => (
                       <div className="absolute right-[-2.125rem] top-1/2 -translate-y-1/2 w-8 h-8 bg-white border-4 border-uw-orange rounded-full z-10"></div>
                       <p className="text-uw-orange font-bold text-xl lg:text-2xl">{event.year}</p>
                       <h3 className="font-semibold text-lg lg:text-xl mt-1 text-uw-dark">{event.title}</h3>
+                      <h3 className="font-semibold text-lg lg:text-xl mt-1 text-uw-dark">----------</h3>
+                      <h3 className="font-semibold text-lg lg:text-xl mt-1 text-uw-dark">{event.description}</h3>
                     </div>
                     <div></div>
                   </>
@@ -57,6 +59,8 @@ const TimelineSection = () => (
                        <div className="absolute left-[-2.125rem] top-1/2 -translate-y-1/2 w-8 h-8 bg-white border-4 border-uw-orange rounded-full z-10"></div>
                        <p className="text-uw-orange font-bold text-xl lg:text-2xl">{event.year}</p>
                        <h3 className="font-semibold text-lg lg:text-xl mt-1 text-uw-dark">{event.title}</h3>
+                       <h3 className="font-semibold text-lg lg:text-xl mt-1 text-uw-dark">----------</h3>
+                      <h3 className="font-semibold text-lg lg:text-xl mt-1 text-uw-dark">{event.description}</h3>
                      </div>
                   </>
                 )}

@@ -97,10 +97,13 @@ export const ESG_DATA: EsgItem[] = [
 ];
 
 export const SUCCESS_TIMELINE: TimelineEvent[] = [
-    { year: '2007', title: 'Founding & Registration', description: '' },
-    { year: '2012', title: 'Early Growth in underground', description: '' },
-    { year: '2016', title: 'Expansion & Licensing', description: '' },
-    { year: '2018', title: 'Safety & Quality Certification', description: '' },
+    { year: '2007', title: 'Company Incorporation', description: 'Early growth in underground Power infrastructure works' },
+    { year: '2010', title: 'BizSafe Star Certification', description: '' },
+    { year: '2011', title: 'Commenced Telecommunication infrastructure works', description: 'ISO certification in 9001 (Quality Management Systems) & 14001 (Environmental Management Systems)' },
+    { year: '2013', title: 'Obtained our First Main Contract in Distribution Power installation works', description: '' },
+    { year: '2018', title: 'Started underground Public Water pipeline installation and Fibre cable installation and associated works', description: 'ISO certification in 45001 (Occupational Health & Safety)' },
+    { year: '2020', title: 'LTA infrastructure works', description: '' },
+    { year: '2022', title: 'eV Charging infrastructure works', description: '' },
 ];
 
 export const SERVICES_DATA: Service[] = [
