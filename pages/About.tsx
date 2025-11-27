@@ -1,9 +1,9 @@
 import React from 'react';
 import { SUCCESS_TIMELINE } from '../constants';
 import AboutMain from '../assets/images/AboutMain.jpg'
-import Vision from '../assets/images/2021 Kampong Java Re-bar to Concrete Pipe Laying.jpg'
+import Vision from '../assets/images/2021_Kampong_Java_Pipe_Laying.jpg'
 import Mission from '../assets/images/Cable Lay 3.jpg'
-import Satisfaction from '../assets/images/IMG-20250906-WA0102.jpg'
+import Satisfaction from '../assets/images/WhatsApp_Image_2023-12-30_at_12.40.14_PM.jpeg'
 import Reliability from '../assets/images/IMG_1127.jpg'
 
 const HeroSection = () => (

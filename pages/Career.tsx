@@ -3,44 +3,42 @@ import { JOB_POSITIONS, BENEFITS_DATA, EMPLOYEE_TESTIMONIALS, COMPANY_STATS } fr
 import type { JobPosition, EmployeeTestimonial } from '../types';
 import { ArrowRightIcon, PlusIcon, XMarkIcon } from '../components/Icons';
 import AnimatedSection from '../components/AnimatedSection';
-// Use a public/static URL instead of importing the PNG so TypeScript doesn't need a module declaration.
-// Place the image at public/assets/images/career-hero.png (or adjust the path to an existing public asset).
-const AboutMain = '/assets/images/Gemini_Generated_Image_8mxn148mxn148mxn.png';
+import CareerHeroImg from '../assets/images/Safety_Briefing_1.jpeg';
 
 const HeroSection = () => (
-    <div className="relative h-[50vh] sm:h-[55vh] md:h-[60vh] bg-cover bg-center" style={{ backgroundImage: `url(${AboutMain})` }}>
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4 sm:px-6">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mt-4 leading-tight">Build Your Career<br/>With United Works</h1>
-        <p className="mt-4 sm:mt-6 max-w-2xl text-sm sm:text-base lg:text-lg text-gray-200">
-          Join our team of dedicated professionals and be part of Singapore's infrastructure development. We offer exciting career opportunities in civil engineering, project management, and technical services.
-        </p>
-      </div>
+    <div className="relative h-[50vh] sm:h-[55vh] md:h-[60vh] bg-cover bg-center" style={{ backgroundImage: `url("${CareerHeroImg}")` }}>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4 sm:px-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mt-4 leading-tight">Build Your Career<br />With United Works</h1>
+            <p className="mt-4 sm:mt-6 max-w-2xl text-sm sm:text-base lg:text-lg text-gray-200">
+                Join our team of dedicated professionals and be part of Singapore's infrastructure development. We offer exciting career opportunities in civil engineering, project management, and technical services.
+            </p>
+        </div>
     </div>
 );
 
 const WhyJoinUsSection = () => (
     <div className="py-12 sm:py-16 lg:py-20 bg-uw-orange bg-opacity-10" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23E97522\' fill-opacity=\'0.1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }}>
-      <div className="container mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-uw-dark">Why Join United Works?</h2>
-        <p className="max-w-3xl mx-auto text-uw-grey-1 leading-relaxed text-sm sm:text-base mb-8 sm:mb-12">
-          At United Works, we believe our people are our greatest asset. We foster a culture of collaboration, innovation, and integrity where every team member can thrive and grow.
-        </p>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {BENEFITS_DATA.map((benefit, index) => (
-            <div key={index} className="bg-white rounded-lg p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="flex justify-center mb-4">
-                <div className="p-4 bg-uw-orange bg-opacity-10 rounded-full">
-                  <benefit.icon className="h-8 w-8 sm:h-10 sm:w-10 text-uw-orange" />
-                </div>
-              </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-3 text-uw-dark">{benefit.title}</h3>
-              <p className="text-sm sm:text-base text-uw-grey-1 leading-relaxed">{benefit.description}</p>
+        <div className="container mx-auto px-4 sm:px-6 text-center">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-uw-dark">Why Join United Works?</h2>
+            <p className="max-w-3xl mx-auto text-uw-grey-1 leading-relaxed text-sm sm:text-base mb-8 sm:mb-12">
+                At United Works, we believe our people are our greatest asset. We foster a culture of collaboration, innovation, and integrity where every team member can thrive and grow.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                {BENEFITS_DATA.map((benefit, index) => (
+                    <div key={index} className="bg-white rounded-lg p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div className="flex justify-center mb-4">
+                            <div className="p-4 bg-uw-orange bg-opacity-10 rounded-full">
+                                <benefit.icon className="h-8 w-8 sm:h-10 sm:w-10 text-uw-orange" />
+                            </div>
+                        </div>
+                        <h3 className="text-lg sm:text-xl font-bold mb-3 text-uw-dark">{benefit.title}</h3>
+                        <p className="text-sm sm:text-base text-uw-grey-1 leading-relaxed">{benefit.description}</p>
+                    </div>
+                ))}
             </div>
-          ))}
         </div>
-      </div>
     </div>
 );
 
@@ -139,7 +137,7 @@ const JobListing: React.FC<{ job: JobPosition; isExpanded: boolean; onToggle: ()
                     {isExpanded ? <XMarkIcon className="w-5 h-5" /> : <PlusIcon className="w-5 h-5" />}
                 </button>
             </div>
-            
+
             {isExpanded && (
                 <div className="mt-4 pt-4 border-t border-uw-grey-3">
                     <div className="grid md:grid-cols-2 gap-6">
@@ -242,8 +240,8 @@ const EmployeeTestimonialsSection = () => (
                 {EMPLOYEE_TESTIMONIALS.map((testimonial, index) => (
                     <div key={index} className="bg-uw-grey-2 rounded-lg p-6 sm:p-8">
                         <div className="flex items-start space-x-4 mb-4">
-                            <img 
-                                src={testimonial.avatarUrl} 
+                            <img
+                                src={testimonial.avatarUrl}
                                 alt={testimonial.name}
                                 className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-4 border-uw-orange object-cover"
                             />

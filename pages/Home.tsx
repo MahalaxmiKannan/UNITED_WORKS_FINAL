@@ -3,9 +3,9 @@ import { COMPANY_STATS, ESG_DATA } from '../constants';
 import type { EsgItem } from '../types';
 import { ArrowRightIcon } from '../components/Icons';
 import AnimatedSection from '../components/AnimatedSection';
-import aboutimg from '../assets/images/WhatsApp Image 2025-09-06 at 14.14.36_5c8c50f7.jpg'
+import aboutimg from '../assets/images/WhatsApp_Image_2025-09-06_at_14.14.36_5c8c50f7.jpg'
 import culimg from '../assets/images/15 Nov 21 N105 Thomson Rd Toolbox mtg.jpg'
-import legimg from '../assets/images/WhatsApp Image 2023-12-30 at 12.40.14 PM.jpeg'
+import legimg from '../assets/images/WhatsApp_Image_2023-12-30_at_12.40.14_PM.jpeg'
 
 import HomeMain from '../assets/videos/6414069-uhd_3840_2160_25fps.mp4'
 

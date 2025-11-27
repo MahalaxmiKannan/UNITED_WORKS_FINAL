@@ -5,22 +5,29 @@ import { UWAwardsIcon, UWCalendarIcon, UWEmployeesIcon, UWExperienceIcon, UWProj
 
 import esgImg from './assets/images/EGSIMG.png';
 import safetyBriefing2 from './assets/images/Safety Briefing 2.jpeg';
-import safetyBriefing1 from './assets/images/Safety Briefing 1.jpeg';
+import safetyBriefing1 from './assets/images/Safety_Briefing_1.jpeg';
 import envImg from './assets/images/IMG-20250906-WA0096.jpg';
 import fibreWork7 from './assets/images/Fibre work 7.jpeg';
 import leanImg from './assets/images/IMG-20250906-WA0099.jpg';
 import safetyImg from './assets/images/IMG_1109.jpg';
 
-import service1 from './assets/images/15 Nov 21 N105 Thomson Rd TH2.jpg';
+import service1 from './assets/images/15_Nov_21_N105_Thomson_Rd_TH2.jpg';
 import service2 from './assets/images/2021 Kampong Java Re-bar to Concrete Pipe Laying.jpg';
 import service3 from './assets/images/Cable Lay 3.jpg';
-import service4 from './assets/images/WhatsApp Image 2025-09-06 at 14.14.36_5c8c50f7.jpg';
+import service4 from './assets/images/WhatsApp_Image_2025-09-06_at_14.14.36_5c8c50f7.jpg';
 
 import milestone2007 from './assets/images/15 Nov 21 N105 Novena TH.jpg';
-import milestone2008 from './assets/images/2021 Kampong Java Pipe Laying.jpg';
+import milestone2008 from './assets/images/2021_Kampong_Java_Pipe_Laying.jpg';
 import milestone2009 from './assets/images/IMG-20230522-WA0077.jpg';
 import milestone2010 from './assets/images/Fibre work 6.jpeg';
 import milestone2011 from './assets/images/IMG_1103.jpg';
+
+import ms211 from './assets/images/15_Nov_21_N105_Thomson_Rd_TH2.jpg';
+import ms212 from './assets/images/2021_Kampong_Java_Pipe_Laying.jpg';
+import ms231 from './assets/images/WhatsApp_Image_2023-12-30_at_12.40.14_PM.jpeg';
+import ms232 from './assets/images/setup.jpg';
+import ms251 from './assets/images/WhatsApp Image 2025-06-10 at 6.52.31 PM (1).jpeg';
+import ms252 from './assets/images/IMG-20250906-WA0099.jpg';
 
 export const NAV_LINKS: NavLink[] = [
     { name: 'About', path: '/about' },
@@ -43,7 +50,7 @@ export const ESG_DATA: EsgItem[] = [
         title: 'ESG',
         fullTitle: 'Our Culture\nEnvironmental, Social & Governance',
         description: 'We understand the environmental, social, and economic impact of our activities and that it is our responsibility to conduct our business in a transparent and ethical manner.',
-        imageUrl: esgImg
+        imageUrl: safetyBriefing1
     },
     {
         id: '02',
@@ -64,7 +71,7 @@ export const ESG_DATA: EsgItem[] = [
         title: 'Environmental',
         fullTitle: 'Protecting Our Environment',
         description: 'Sustainability is at the core of our operations. We implement green practices and technologies to minimize our environmental footprint and protect natural resources.',
-        imageUrl: envImg
+        imageUrl: service4
     },
     {
         id: '05',
@@ -78,7 +85,7 @@ export const ESG_DATA: EsgItem[] = [
         title: 'Lean',
         fullTitle: 'Lean Construction Principles',
         description: 'By adopting lean principles, we optimize workflows, reduce waste, and enhance value for our clients. Efficiency and quality are paramount in every project we undertake.',
-        imageUrl: leanImg
+        imageUrl: milestone2009
     },
     {
         id: '07',
@@ -106,7 +113,7 @@ export const SERVICES_DATA: Service[] = [
     {
         title: 'Potable Watermains & Pipeline Works',
         description: "We handle a wide range of potable watermain and pipeline projects, including diversion, repairs, and upgrading works. Our experienced professionals also undertake PUB water pipe renewal works, ensuring safe, sustainable, and compliant water distribution systems that meet the highest industry standards.",
-        imageUrl: service2,
+        imageUrl: milestone2008,
         layout: "left"
     },
     {
@@ -131,54 +138,46 @@ export const PROJECTS_DATA: Project[] = Array.from({ length: 24 }, (_, i) => ({
 }));
 
 export const MILESTONES_TIMELINE: { year: string; imageUrl: string }[] = [
-    { year: '2007', imageUrl: milestone2007 },
-    { year: '2008', imageUrl: milestone2008 },
-    { year: '2009', imageUrl: milestone2009 },
-    { year: '2010', imageUrl: milestone2010 },
-    { year: '2011', imageUrl: milestone2011 },
-    { year: '2012', imageUrl: service4 },
+    { year: '2021', imageUrl: ms211 },
+    { year: '2021', imageUrl: ms212 },
+    { year: '2023', imageUrl: ms231 },
+    { year: '2023', imageUrl: ms232 },
+    { year: '2025', imageUrl: ms251 },
+    { year: '2025', imageUrl: ms252 },
 ];
 
 export const TESTIMONIALS_DATA: Testimonial[] = [
     {
         name: 'Daniel Evans',
         location: 'Bukit Timah, Singapore',
-        quote: 'Impressive work from the United Works team. They handled a complex structural engineering task with expertise and precision. Their commitment to quality is evident.',
-        avatarUrl: 'https://i.pravatar.cc/100?u=benjamin',
+        quote: 'Impres0?u=benjaminsive work from the United Works team. They handled a complex structural engineering task with expertise and precision. Their commitment to quality is evident.',
+        avatarUrl: 'https://static.vecteezy.com/system/resources/thumbnails/022/014/184/small/user-icon-member-login-isolated-vector.jpg',
         rating: 5,
-        position: { top: '25%', left: '40%' }
+        position: { top: '45%', left: '45%' }
     },
     {
         name: 'Sarah Chen',
         location: 'Pasir Ris, Singapore',
         quote: 'The team was professional and efficient. Our project was completed ahead of schedule and under budget. Highly recommended!',
-        avatarUrl: 'https://i.pravatar.cc/100?u=sarah',
+        avatarUrl: 'https://static.vecteezy.com/system/resources/thumbnails/022/014/184/small/user-icon-member-login-isolated-vector.jpg',
         rating: 5,
-        position: { top: '22%', left: '88%' }
+        position: { top: '35%', left: '40%' }
     },
     {
         name: 'Mr. Benjamin Lee',
         location: 'Tampines, Singapore',
         quote: "United Works delivered exceptional service for our cable installation project. Their attention to detail, safety standards, and proactive communication set them apart. The team finished the work efficiently and exceeded our expectations. I highly recommend them for any large-scale infrastructure needs in Singapore!",
-        avatarUrl: 'https://i.pravatar.cc/100?u=david',
+        avatarUrl: 'https://static.vecteezy.com/system/resources/thumbnails/022/014/184/small/user-icon-member-login-isolated-vector.jpg',
         rating: 5,
-        position: { top: '53%', left: '82%' }
+        position: { top: '45%', left: '30%' }
     },
     {
         name: 'Emily Tan',
         location: 'Tuas, Singapore',
         quote: "Their in-building works were top-notch. The cabling is neat, and the fire-stop installations give us peace of mind. A very reliable partner.",
-        avatarUrl: 'https://i.pravatar.cc/100?u=emily',
+        avatarUrl: 'https://static.vecteezy.com/system/resources/thumbnails/022/014/184/small/user-icon-member-login-isolated-vector.jpg',
         rating: 5,
-        position: { top: '60%', left: '18%' }
-    },
-    {
-        name: 'Michael Rodriguez',
-        location: 'Sentosa, Singapore',
-        quote: 'From start to finish, the project management was flawless. They kept us updated and addressed all our concerns promptly. True professionals.',
-        avatarUrl: 'https://i.pravatar.cc/100?u=michael',
-        rating: 5,
-        position: { top: '85%', left: '48%' }
+        position: { top: '65%', left: '15%' }
     }
 ];
 
@@ -373,7 +372,7 @@ export const EMPLOYEE_TESTIMONIALS: EmployeeTestimonial[] = [
         position: 'Senior Civil Engineer',
         department: 'Engineering',
         quote: 'Working at United Works has been incredibly rewarding. The company\'s commitment to safety and quality is unmatched, and I\'ve had the opportunity to work on some of Singapore\'s most challenging infrastructure projects.',
-        avatarUrl: 'https://i.pravatar.cc/100?u=sarahlim',
+        avatarUrl: 'https://cdn-icons-png.flaticon.com/512/6069/6069202.png',
         yearsAtCompany: '5 years'
     },
     {
@@ -381,7 +380,7 @@ export const EMPLOYEE_TESTIMONIALS: EmployeeTestimonial[] = [
         position: 'Project Manager',
         department: 'Operations',
         quote: 'The collaborative culture here is amazing. Everyone is committed to excellence, and the management truly values employee input and professional development.',
-        avatarUrl: 'https://i.pravatar.cc/100?u=davidchen',
+        avatarUrl: 'https://cdn-icons-png.flaticon.com/512/6069/6069202.png',
         yearsAtCompany: '3 years'
     },
     {
@@ -389,7 +388,7 @@ export const EMPLOYEE_TESTIMONIALS: EmployeeTestimonial[] = [
         position: 'Safety Officer',
         department: 'Safety & Compliance',
         quote: 'United Works prioritizes safety above all else. I\'m proud to be part of a team that ensures every worker goes home safely to their families every day.',
-        avatarUrl: 'https://i.pravatar.cc/100?u=priyasharma',
+        avatarUrl: 'https://cdn-icons-png.flaticon.com/512/6069/6069202.png',
         yearsAtCompany: '4 years'
     },
     {
@@ -397,7 +396,7 @@ export const EMPLOYEE_TESTIMONIALS: EmployeeTestimonial[] = [
         position: 'Electrical Technician',
         department: 'Technical Services',
         quote: 'The company invests in the latest technology and provides excellent training. I\'ve grown both personally and professionally since joining the team.',
-        avatarUrl: 'https://i.pravatar.cc/100?u=ahmadrahman',
+        avatarUrl: 'https://cdn-icons-png.flaticon.com/512/6069/6069202.png',
         yearsAtCompany: '2 years'
     }
 ];
