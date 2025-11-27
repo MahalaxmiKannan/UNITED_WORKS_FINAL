@@ -3,31 +3,31 @@ import React from 'react';
 import type { NavLink, Stat, EsgItem, TimelineEvent, Service, Project, FaqItem, Testimonial, JobPosition, Benefit, EmployeeTestimonial } from './types';
 import { UWAwardsIcon, UWCalendarIcon, UWEmployeesIcon, UWExperienceIcon, UWProjectsIcon } from './components/Icons';
 
-import esgImg from './assets/images/EGSIMG.png';
-import safetyBriefing2 from './assets/images/Safety Briefing 2.jpeg';
-import safetyBriefing1 from './assets/images/Safety_Briefing_1.jpeg';
-import envImg from './assets/images/IMG-20250906-WA0096.jpg';
-import fibreWork7 from './assets/images/Fibre work 7.jpeg';
-import leanImg from './assets/images/IMG-20250906-WA0099.jpg';
-import safetyImg from './assets/images/IMG_1109.jpg';
+const esgImg = '/EGSIMG.png';
+const safetyBriefing2 = '/Safety Briefing 2.jpeg';
+const safetyBriefing1 = '/Safety_Briefing_1.jpeg';
+const envImg = '/IMG-20250906-WA0096.jpg';
+const fibreWork7 = '/Fibre work 7.jpeg';
+const leanImg = '/IMG-20250906-WA0099.jpg';
+const safetyImg = '/IMG_1109.jpg';
 
-import service1 from './assets/images/15_Nov_21_N105_Thomson_Rd_TH2.jpg';
-import service2 from './assets/images/2021 Kampong Java Re-bar to Concrete Pipe Laying.jpg';
-import service3 from './assets/images/Cable Lay 3.jpg';
-import service4 from './assets/images/WhatsApp_Image_2025-09-06_at_14.14.36_5c8c50f7.jpg';
+const service1 = '/15_Nov_21_N105_Thomson_Rd_TH2.jpg';
+const service2 = '/2021 Kampong Java Re-bar to Concrete Pipe Laying.jpg';
+const service3 = '/Cable Lay 3.jpg';
+const service4 = '/WhatsApp_Image_2025-09-06_at_14.14.36_5c8c50f7.jpg';
 
-import milestone2007 from './assets/images/15 Nov 21 N105 Novena TH.jpg';
-import milestone2008 from './assets/images/2021_Kampong_Java_Pipe_Laying.jpg';
-import milestone2009 from './assets/images/IMG-20230522-WA0077.jpg';
-import milestone2010 from './assets/images/Fibre work 6.jpeg';
-import milestone2011 from './assets/images/IMG_1103.jpg';
+const milestone2007 = '/15 Nov 21 N105 Novena TH.jpg';
+const milestone2008 = '/2021_Kampong_Java_Pipe_Laying.jpg';
+const milestone2009 = '/IMG-20230522-WA0077.jpg';
+const milestone2010 = '/Fibre work 6.jpeg';
+const milestone2011 = '/IMG_1103.jpg';
 
-import ms211 from './assets/images/15_Nov_21_N105_Thomson_Rd_TH2.jpg';
-import ms212 from './assets/images/2021_Kampong_Java_Pipe_Laying.jpg';
-import ms231 from './assets/images/WhatsApp_Image_2023-12-30_at_12.40.14_PM.jpeg';
-import ms232 from './assets/images/setup.jpg';
-import ms251 from './assets/images/WhatsApp Image 2025-06-10 at 6.52.31 PM (1).jpeg';
-import ms252 from './assets/images/IMG-20250906-WA0099.jpg';
+const ms211 = '/15_Nov_21_N105_Thomson_Rd_TH2.jpg';
+const ms212 = '/2021_Kampong_Java_Pipe_Laying.jpg';
+const ms231 = '/WhatsApp_Image_2023-12-30_at_12.40.14_PM.jpeg';
+const ms232 = '/setup.jpg';
+const ms251 = '/WhatsApp Image 2025-06-10 at 6.52.31 PM (1).jpeg';
+const ms252 = '/IMG-20250906-WA0099.jpg';
 
 export const NAV_LINKS: NavLink[] = [
     { name: 'About', path: '/about' },

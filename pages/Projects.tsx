@@ -7,10 +7,10 @@ import {
 import { ArrowRightIcon, CpuChipIcon, StarIcon } from "../components/Icons";
 import type { Testimonial } from "../types";
 // Use public/static paths for images to avoid missing module/type errors for binary assets
-const ProjectMain = "/assets/images/ProjectMain.jpeg";
-const Map = "/assets/images/SingaporeMap.png";
+const ProjectMain = "/ProjectMain.jpeg";
+const Map = "/SingaporeMap.png";
 
-import setup from "../assets/images/Setup.jpg";
+const setup = "/setup.jpg";
 
 const HeroSection = () => (
   <div
@@ -37,10 +37,14 @@ const MilestonesSection = () => {
     <div className="py-16 lg:py-24 bg-uw-grey-2 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-uw-dark mb-4">Legacy of Milestones</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-uw-dark mb-4">
+            Legacy of Milestones
+          </h2>
           <div className="w-24 h-1.5 bg-uw-orange mx-auto rounded-full"></div>
           <p className="mt-4 text-uw-grey-1 max-w-2xl mx-auto">
-            Over the years, we have consistently delivered excellence in infrastructure, building a foundation of trust and quality across Singapore.
+            Over the years, we have consistently delivered excellence in
+            infrastructure, building a foundation of trust and quality across
+            Singapore.
           </p>
         </div>
 
@@ -50,8 +54,12 @@ const MilestonesSection = () => {
 
           <div className="space-y-12">
             {MILESTONES_TIMELINE.map((milestone, index) => (
-              <div key={index} className={`relative flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-
+              <div
+                key={index}
+                className={`relative flex flex-col md:flex-row items-center ${
+                  index % 2 === 0 ? "md:flex-row-reverse" : ""
+                }`}
+              >
                 {/* Timeline Dot */}
                 <div className="absolute left-4 md:left-1/2 w-5 h-5 bg-uw-orange rounded-full border-4 border-white shadow-md transform -translate-x-1/2 z-10 mt-6 md:mt-0"></div>
 
@@ -70,8 +78,12 @@ const MilestonesSection = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
 
                       <div className="absolute bottom-0 left-0 w-full p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                        <span className="inline-block px-3 py-1 bg-uw-orange text-white text-xs font-bold tracking-widest rounded-full mb-2">YEAR</span>
-                        <h3 className="text-4xl font-bold text-white tracking-wider">{milestone.year}</h3>
+                        <span className="inline-block px-3 py-1 bg-uw-orange text-white text-xs font-bold tracking-widest rounded-full mb-2">
+                          YEAR
+                        </span>
+                        <h3 className="text-4xl font-bold text-white tracking-wider">
+                          {milestone.year}
+                        </h3>
                       </div>
                     </div>
                   </div>
@@ -132,10 +144,11 @@ const ProjectsGallery = () => {
             <button
               key={number}
               onClick={() => paginate(number)}
-              className={`px-3 sm:px-4 py-2 rounded-md text-xs sm:text-sm font-medium ${currentPage === number
-                ? "bg-uw-orange text-white"
-                : "bg-uw-grey-3 text-uw-dark hover:bg-gray-300"
-                }`}
+              className={`px-3 sm:px-4 py-2 rounded-md text-xs sm:text-sm font-medium ${
+                currentPage === number
+                  ? "bg-uw-orange text-white"
+                  : "bg-uw-grey-3 text-uw-dark hover:bg-gray-300"
+              }`}
             >
               {number}
             </button>
@@ -197,10 +210,11 @@ const TestimonialsSection = () => {
               <img
                 src={testimonial.avatarUrl}
                 alt={testimonial.name}
-                className={`w-16 h-16 rounded-full border-4 object-cover transition-all duration-300 shadow-lg ${testimonialToDisplay.name === testimonial.name
-                  ? "border-yellow-400 scale-125 z-20"
-                  : "border-uw-orange"
-                  }`}
+                className={`w-16 h-16 rounded-full border-4 object-cover transition-all duration-300 shadow-lg ${
+                  testimonialToDisplay.name === testimonial.name
+                    ? "border-yellow-400 scale-125 z-20"
+                    : "border-uw-orange"
+                }`}
               />
             </div>
           ))}
@@ -222,8 +236,17 @@ const TestimonialsSection = () => {
                       className="w-20 h-20 rounded-full border-4 border-white shadow-lg object-cover"
                     />
                     <div className="absolute -bottom-2 -right-2 bg-uw-orange text-white p-1.5 rounded-full shadow-md">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                        <path fillRule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.678 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z" clipRule="evenodd" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="w-4 h-4"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.678 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+                          clipRule="evenodd"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -244,10 +267,11 @@ const TestimonialsSection = () => {
                       {Array.from({ length: 5 }).map((_, i) => (
                         <StarIcon
                           key={i}
-                          className={`w-4 h-4 ${i < testimonialToDisplay.rating
+                          className={`w-4 h-4 ${
+                            i < testimonialToDisplay.rating
                               ? "text-yellow-400"
                               : "text-gray-200"
-                            }`}
+                          }`}
                         />
                       ))}
                     </div>
@@ -255,7 +279,9 @@ const TestimonialsSection = () => {
                 </div>
 
                 <div className="relative">
-                  <span className="absolute -top-2 -left-2 text-6xl text-uw-grey-3 opacity-30 font-serif">"</span>
+                  <span className="absolute -top-2 -left-2 text-6xl text-uw-grey-3 opacity-30 font-serif">
+                    "
+                  </span>
                   <p className="text-uw-grey-1 leading-relaxed relative z-10 italic">
                     {testimonialToDisplay.quote}
                   </p>
@@ -289,10 +315,11 @@ const TestimonialsSection = () => {
                     {Array.from({ length: 5 }).map((_, i) => (
                       <span key={i}>
                         <StarIcon
-                          className={`w-4 h-4 ${i < testimonial.rating
-                            ? "text-yellow-400"
-                            : "text-gray-300"
-                            }`}
+                          className={`w-4 h-4 ${
+                            i < testimonial.rating
+                              ? "text-yellow-400"
+                              : "text-gray-300"
+                          }`}
                         />
                       </span>
                     ))}
@@ -316,38 +343,38 @@ const Projects = () => {
 
   const madeByImages: { src: string; label: string; caption: string }[] = [
     {
-      src: "/assets/images/15 Nov 21 N105 Thomson Rd Toolbox mtg.jpg",
+      src: "/15 Nov 21 N105 Thomson Rd Toolbox mtg.jpg",
       label: "Toolbox Meeting",
       caption: "Safety briefing and pre-shift checks",
     },
     {
-      src: "/assets/images/Cable Lay 3.jpg",
+      src: "/Cable Lay 3.jpg",
       label: "Cable Laying",
       caption: "Precision cable trenching and placement",
     },
     {
-      src: "/assets/images/IMG-20230522-WA0078.jpg",
+      src: "/IMG-20230522-WA0078.jpg",
       label: "Installation Team",
       caption: "Skilled team carrying out installations",
     },
     {
-      src: "/assets/images/setup.jpg",
+      src: "/setup.jpg",
       label: "Equipment Setup",
       caption: "Mobilisation and heavy equipment setup",
     },
     {
-      src: "/assets/images/reinstatement.jpeg",
+      src: "/reinstatement.jpeg",
       label: "Reinstatement",
       caption: "Quality reinstatement and surfacing",
     },
     {
-      src: "/assets/images/IMG_1116.jpg",
+      src: "/IMG_1116.jpg",
       label: "Site Progress",
       caption: "Ongoing site progress and coordination",
     },
     // next page single image
     {
-      src: "/assets/images/WhatsApp_Image_2025-09-06_at_14.14.36_5c8c50f7.jpg",
+      src: "/WhatsApp_Image_2025-09-06_at_14.14.36_5c8c50f7.jpg",
       label: "Special Project",
       caption: "Featured highlight project",
     },
@@ -397,10 +424,11 @@ const Projects = () => {
               <button
                 onClick={() => setMadeByPage((p) => Math.max(1, p - 1))}
                 disabled={madeByPage === 1}
-                className={`px-3 py-2 rounded-md text-sm font-medium ${madeByPage === 1
-                  ? "bg-uw-grey-3 text-uw-dark opacity-50 cursor-not-allowed"
-                  : "bg-uw-orange text-white hover:opacity-90"
-                  }`}
+                className={`px-3 py-2 rounded-md text-sm font-medium ${
+                  madeByPage === 1
+                    ? "bg-uw-grey-3 text-uw-dark opacity-50 cursor-not-allowed"
+                    : "bg-uw-orange text-white hover:opacity-90"
+                }`}
               >
                 Previous
               </button>
@@ -414,10 +442,11 @@ const Projects = () => {
                   setMadeByPage((p) => Math.min(totalPages, p + 1))
                 }
                 disabled={madeByPage === totalPages}
-                className={`px-3 py-2 rounded-md text-sm font-medium ${madeByPage === totalPages
-                  ? "bg-uw-grey-3 text-uw-dark opacity-50 cursor-not-allowed"
-                  : "bg-uw-orange text-white hover:opacity-90"
-                  }`}
+                className={`px-3 py-2 rounded-md text-sm font-medium ${
+                  madeByPage === totalPages
+                    ? "bg-uw-grey-3 text-uw-dark opacity-50 cursor-not-allowed"
+                    : "bg-uw-orange text-white hover:opacity-90"
+                }`}
               >
                 Next
               </button>

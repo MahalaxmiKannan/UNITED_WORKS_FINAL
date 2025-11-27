@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { COMPANY_STATS, ESG_DATA } from '../constants';
-import type { EsgItem } from '../types';
-import { ArrowRightIcon } from '../components/Icons';
-import AnimatedSection from '../components/AnimatedSection';
-import aboutimg from '../assets/images/WhatsApp_Image_2025-09-06_at_14.14.36_5c8c50f7.jpg'
-import culimg from '../assets/images/15 Nov 21 N105 Thomson Rd Toolbox mtg.jpg'
-import legimg from '../assets/images/WhatsApp_Image_2023-12-30_at_12.40.14_PM.jpeg'
+import React, { useState } from "react";
+import { COMPANY_STATS, ESG_DATA } from "../constants";
+import type { EsgItem } from "../types";
+import { ArrowRightIcon } from "../components/Icons";
+import AnimatedSection from "../components/AnimatedSection";
 
-import HomeMain from '../assets/videos/6414069-uhd_3840_2160_25fps.mp4'
+const aboutimg = "/WhatsApp_Image_2025-09-06_at_14.14.36_5c8c50f7.jpg";
+const culimg = "/15 Nov 21 N105 Thomson Rd Toolbox mtg.jpg";
+const legimg = "/WhatsApp_Image_2023-12-30_at_12.40.14_PM.jpeg";
 
+const HomeMain = "/6414069-uhd_3840_2160_25fps.mp4";
 
 const HeroSection = () => (
   <div className="p-4 sm:p-6">
@@ -33,31 +33,38 @@ const HeroSection = () => (
           Team Work | Integrity | Commitment
         </p>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mt-2 sm:mt-4 leading-tight max-w-2xl">
-          Connecting Cities.<br />Empowering Communities.
+          Connecting Cities.
+          <br />
+          Empowering Communities.
         </h1>
         <p className="mt-4 sm:mt-6 max-w-xl text-sm sm:text-base lg:text-lg text-gray-200">
           At United Works Pte Ltd, we specialize in electrical engineering,
-          infrastructure cabling, power systems, and project management that keeps
-          Singapore's future powered and connected.
+          infrastructure cabling, power systems, and project management that
+          keeps Singapore's future powered and connected.
         </p>
       </div>
     </div>
   </div>
 );
 
-
 const StatsSection = () => (
   <div className="py-12 sm:py-16 lg:py-20 bg-uw-orange bg-opacity-10">
     <div className="container mx-auto px-4 sm:px-6 text-center">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 sm:mb-12 text-uw-dark">Company at a Glance</h2>
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 sm:mb-12 text-uw-dark">
+        Company at a Glance
+      </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
         {COMPANY_STATS.map((stat, index) => (
           <div key={index} className="flex flex-col items-center">
             <div className="p-3 sm:p-4 lg:p-5 bg-white rounded-full shadow-lg border-2 border-uw-orange transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer">
               <stat.icon className="h-8 w-8 sm:h-10 sm:w-10 lg:h-14 lg:w-14 text-uw-dark" />
             </div>
-            <p className="text-xl sm:text-2xl lg:text-3xl font-bold mt-2 sm:mt-4 text-uw-dark">{stat.value}</p>
-            <p className="text-xs sm:text-sm lg:text-base text-uw-grey-1 mt-1 text-center px-1">{stat.label}</p>
+            <p className="text-xl sm:text-2xl lg:text-3xl font-bold mt-2 sm:mt-4 text-uw-dark">
+              {stat.value}
+            </p>
+            <p className="text-xs sm:text-sm lg:text-base text-uw-grey-1 mt-1 text-center px-1">
+              {stat.label}
+            </p>
           </div>
         ))}
       </div>
@@ -70,14 +77,28 @@ const AboutSection = () => (
     <div className="container mx-auto px-4 sm:px-6">
       <div className="grid md:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
         <div className="order-2 md:order-1">
-          <h3 className="text-lg sm:text-xl font-semibold text-uw-orange">About United Works</h3>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2 text-uw-dark">A Trusted Leader in Infrastructure</h2>
+          <h3 className="text-lg sm:text-xl font-semibold text-uw-orange">
+            About United Works
+          </h3>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2 text-uw-dark">
+            A Trusted Leader in Infrastructure
+          </h2>
           <p className="mt-4 text-uw-grey-1 leading-relaxed text-sm sm:text-base">
-            United Works Pte. Ltd. is a trusted leader in Singapore's civil engineering and infrastructure sector, specializing in underground cable and pipe installation, road reinstatement, and large-scale infrastructure development projects. Since our establishment, we have built a reputation for delivering reliable, high-quality engineering solutions that underpin the city's vibrant growth and connectivity.
+            United Works Pte. Ltd. is a trusted leader in Singapore's civil
+            engineering and infrastructure sector, specializing in underground
+            cable and pipe installation, road reinstatement, and large-scale
+            infrastructure development projects. Since our establishment, we
+            have built a reputation for delivering reliable, high-quality
+            engineering solutions that underpin the city's vibrant growth and
+            connectivity.
           </p>
         </div>
         <div className="order-1 md:order-2">
-          <img src={aboutimg} alt="About United Works" className="rounded-lg shadow-xl w-full h-auto" />
+          <img
+            src={aboutimg}
+            alt="About United Works"
+            className="rounded-lg shadow-xl w-full h-auto"
+          />
         </div>
       </div>
     </div>
@@ -89,13 +110,26 @@ const CultureSection = () => (
     <div className="container mx-auto px-4 sm:px-6">
       <div className="grid md:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
         <div className="order-2 md:order-1">
-          <img src={culimg} alt="Our Culture" className="rounded-lg shadow-xl w-full h-auto" />
+          <img
+            src={culimg}
+            alt="Our Culture"
+            className="rounded-lg shadow-xl w-full h-auto"
+          />
         </div>
         <div className="order-1 md:order-2 md:pl-8 lg:pl-12">
-          <h3 className="text-lg sm:text-xl font-semibold text-uw-orange">Our Culture</h3>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2 text-uw-dark">Collaboration, Innovation, and Integrity</h2>
+          <h3 className="text-lg sm:text-xl font-semibold text-uw-orange">
+            Our Culture
+          </h3>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2 text-uw-dark">
+            Collaboration, Innovation, and Integrity
+          </h2>
           <p className="mt-4 text-uw-grey-1 leading-relaxed text-sm sm:text-base">
-            United Works fosters a culture of collaboration, innovation, and integrity. Safety and accountability are central to everything they do. The company values continuous learning and diverse perspectives. Inclusivity and mutual respect create a strong community within and beyond the workforce. Together, they deliver trusted, sustainable infrastructure solutions with excellence.
+            United Works fosters a culture of collaboration, innovation, and
+            integrity. Safety and accountability are central to everything they
+            do. The company values continuous learning and diverse perspectives.
+            Inclusivity and mutual respect create a strong community within and
+            beyond the workforce. Together, they deliver trusted, sustainable
+            infrastructure solutions with excellence.
           </p>
         </div>
       </div>
@@ -108,25 +142,36 @@ const LegacySection = () => (
     <div className="container mx-auto px-4 sm:px-6">
       <div className="grid md:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
         <div className="order-2 md:order-1">
-          <h3 className="text-lg sm:text-xl font-semibold text-uw-orange">Our Legacy</h3>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2 text-uw-dark">A Legacy Built on Trust</h2>
+          <h3 className="text-lg sm:text-xl font-semibold text-uw-orange">
+            Our Legacy
+          </h3>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2 text-uw-dark">
+            A Legacy Built on Trust
+          </h2>
           <p className="mt-4 text-uw-grey-1 leading-relaxed text-sm sm:text-base">
-            United Works Pte. Ltd. has built a trusted reputation through over 15 years of quality infrastructure work. We focus on safety, integrity, and client satisfaction at every step. Our projects go beyond construction to foster lasting partnerships. Together, we build Singapore's future with dedication and excellence.
+            United Works Pte. Ltd. has built a trusted reputation through over
+            15 years of quality infrastructure work. We focus on safety,
+            integrity, and client satisfaction at every step. Our projects go
+            beyond construction to foster lasting partnerships. Together, we
+            build Singapore's future with dedication and excellence.
           </p>
         </div>
         <div className="order-1 md:order-2">
-          <img src={legimg} alt="Legacy of Trust" className="rounded-lg shadow-xl w-full h-auto" />
+          <img
+            src={legimg}
+            alt="Legacy of Trust"
+            className="rounded-lg shadow-xl w-full h-auto"
+          />
         </div>
       </div>
     </div>
   </div>
 );
 
-
 const EsgSection = () => {
   const [activeEsg, setActiveEsg] = useState<EsgItem>(ESG_DATA[0]);
 
-  const [subtitle, title] = activeEsg.fullTitle.split('\n');
+  const [subtitle, title] = activeEsg.fullTitle.split("\n");
 
   return (
     <div className="py-12 sm:py-16 lg:py-24 bg-white">
@@ -145,8 +190,24 @@ const EsgSection = () => {
                       onClick={() => setActiveEsg(item)}
                       className="w-full text-left flex items-baseline group"
                     >
-                      <span className={`font-mono text-sm sm:text-base mr-3 sm:mr-4 transition-opacity duration-300 ${activeEsg.id === item.id ? 'opacity-100' : 'opacity-50 group-hover:opacity-100'}`}>{item.id}</span>
-                      <span className={`font-semibold text-lg sm:text-xl lg:text-2xl transition-opacity duration-300 ${activeEsg.id === item.id ? 'opacity-100' : 'opacity-75 group-hover:opacity-100'}`}>{item.title}</span>
+                      <span
+                        className={`font-mono text-sm sm:text-base mr-3 sm:mr-4 transition-opacity duration-300 ${
+                          activeEsg.id === item.id
+                            ? "opacity-100"
+                            : "opacity-50 group-hover:opacity-100"
+                        }`}
+                      >
+                        {item.id}
+                      </span>
+                      <span
+                        className={`font-semibold text-lg sm:text-xl lg:text-2xl transition-opacity duration-300 ${
+                          activeEsg.id === item.id
+                            ? "opacity-100"
+                            : "opacity-75 group-hover:opacity-100"
+                        }`}
+                      >
+                        {item.title}
+                      </span>
                     </button>
                   </li>
                 ))}
@@ -156,18 +217,34 @@ const EsgSection = () => {
 
           {/* Right Content */}
           <div className="lg:col-span-8 xl:col-span-9 flex items-center">
-            <div key={activeEsg.id} className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center animate-push-in w-full">
+            <div
+              key={activeEsg.id}
+              className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center animate-push-in w-full"
+            >
               <div className="order-2 md:order-1">
-                <p className="text-xs sm:text-sm font-bold text-uw-orange tracking-widest">{subtitle.toUpperCase()}</p>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2 text-uw-orange">{title}</h2>
-                <p className="mt-4 sm:mt-6 text-uw-grey-1 leading-relaxed text-sm sm:text-base">{activeEsg.description}</p>
-                <a href="#" className="inline-flex items-center font-semibold text-uw-orange hover:text-orange-600 group mt-6 sm:mt-8 text-sm tracking-widest">
+                <p className="text-xs sm:text-sm font-bold text-uw-orange tracking-widest">
+                  {subtitle.toUpperCase()}
+                </p>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2 text-uw-orange">
+                  {title}
+                </h2>
+                <p className="mt-4 sm:mt-6 text-uw-grey-1 leading-relaxed text-sm sm:text-base">
+                  {activeEsg.description}
+                </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center font-semibold text-uw-orange hover:text-orange-600 group mt-6 sm:mt-8 text-sm tracking-widest"
+                >
                   LEARN MORE
                   <ArrowRightIcon className="w-4 h-4 sm:w-5 sm:h-5 ml-2 transition-transform group-hover:translate-x-1" />
                 </a>
               </div>
               <div className="order-1 md:order-2">
-                <img src={activeEsg.imageUrl} alt={activeEsg.title} className="rounded-lg shadow-xl w-full h-auto object-cover aspect-[5/4]" />
+                <img
+                  src={activeEsg.imageUrl}
+                  alt={activeEsg.title}
+                  className="rounded-lg shadow-xl w-full h-auto object-cover aspect-[5/4]"
+                />
               </div>
             </div>
           </div>
@@ -176,7 +253,6 @@ const EsgSection = () => {
     </div>
   );
 };
-
 
 const Home = () => {
   return (
